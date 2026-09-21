@@ -1,17 +1,15 @@
-/* Skriv en klasse til at håndtere bankkonti */
+public class BankAccount {
+    double balance;
 
-double balance = 1000;
+    public BankAccount(double balance) {
+        this.balance = balance;
+    }
 
-void main() {
-    withdraw(1200);
-    deposit(100);
-    IO.println(balance);
-}
+    void withdraw(double amount) {
+        balance = balance - amount;
+    }
 
-void withdraw(double amount) {
-    balance = balance - amount;
-}
-
-void deposit(double amount) {
-    balance = balance + amount;
+    void deposit(double amount) {
+        balance = balance + amount;
+    }
 }
