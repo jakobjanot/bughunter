@@ -8,11 +8,14 @@ void main() {
 }
 
 double calculateAverage(int[] numbers) {
+    if (numbers.length == 0) {
+        return 0.0;
+    }
     int sum = 0;
 
     for (int number : numbers) {
         sum += number;
     }
 
-    return  sum / numbers.length;
+    return (double) sum / numbers.length;
 }
