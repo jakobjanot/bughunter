@@ -6,5 +6,5 @@ void main() {
 }
 
 boolean isOdd(int number) {
-    return number / 2 == 1;
+    return number % 2 == 1;
 }
