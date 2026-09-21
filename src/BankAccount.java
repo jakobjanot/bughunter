@@ -1,17 +1,8 @@
-/* Skriv en klasse til at håndtere bankkonti */
+public static void main(String[] args) {
+    bankclass account = new bankclass(1000);
 
-double balance = 1000;
+    account.withdraw(1200); // Fejler: Ikke nok dækning
+    account.deposit(100);   // Indsætter 100
 
-void main() {
-    withdraw(1200);
-    deposit(100);
-    IO.println(balance);
-}
-
-void withdraw(double amount) {
-    balance = balance - amount;
-}
-
-void deposit(double amount) {
-    balance = balance + amount;
+    IO.println("Nuværende saldo: " + account.getBalance()); // Printer 1100.0
 }
