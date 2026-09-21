@@ -1,11 +1,11 @@
 /* Vælg passende navne for variablerne */
 
 void main() {
-    String x = "John";
-    int y = 25;
-    String z = "john@example.com";
+    String name = "John";
+    int age = 25;
+    String email = "john@example.com";
 
-    IO.println(x);
-    IO.println(y);
-    IO.println(z);
+    IO.println(name);
+    IO.println(age);
+    IO.println(email);
 }
