@@ -8,11 +8,15 @@ void main() {
 }
 
 double calculateAverage(int[] numbers) {
-    int sum = 0;
+    if (numbers == null || numbers.length == 0) {
+        return 0.0; // man kan også skrive throw new IllegalArgumentException("Arrayet må ikke være tomt eller null.");
+    }
 
+    int sum = 0;
     for (int number : numbers) {
         sum += number;
     }
 
-    return  sum / numbers.length;
+    // Typecast sum til double for at bevare decimaler
+    return (double) sum / numbers.length;
 }
