@@ -1,10 +1,10 @@
 /* Skriv en klasse til at håndtere bankkonti */
 
-double balance = 6969;
+double balance = 0;
 
 void main() {
-    withdraw(420);
-    deposit(69);
+    withdraw(69);
+    deposit(420);
     IO.println(balance);
 }
 
