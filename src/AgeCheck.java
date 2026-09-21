@@ -4,7 +4,7 @@ void main() {
     int age = Integer.parseInt(IO.readln("Indtast din alder: "));
     
     if (isAdult(age)) {
-        IO.println("Du er en voksen.");
+        IO.println("Du er voksen.");
     } else {
         IO.println("Du er ikke voksen.");
     }
