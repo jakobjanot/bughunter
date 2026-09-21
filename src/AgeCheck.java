@@ -1,7 +1,7 @@
 /* Find fejlen i koden og ret den */
 
 void main() {
-    int age = IO.readln("Indtast din alder: ");
+    int age = Integer.parseInt(IO.readln("Indtast din alder: "));
     
     if (isAdult(age)) {
         IO.println("Du er en voksen.");
